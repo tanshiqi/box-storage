@@ -1,0 +1,39 @@
+{
+    "name": "atan/box-storage",
+    "description": "Box storage filesystem for laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "atan",
+            "email": "tanshiqi@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/atan/box-storage",
+    "keywords": ["Laravel", "box", "filesystem", "flysystem"],
+    "require": {
+        "illuminate/support": "~5",
+        "league/flysystem": "^1.0",
+        "atan/laravel-box": "*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BoxStorage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BoxStorage\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BoxStorage\\BoxStorageServiceProvider"
+            ]
+        }
+    }
+}
